@@ -3,9 +3,9 @@ import { css, keyframes } from "@emotion/react";
 import styled from '@emotion/styled';
 import { useEffect } from "react";
 import { scripts, swiper } from "../../public/styles/config";
-import  {  Parallax ,  Background  }  from  'react-parallax' ;
 
 const Space: React.FC = () => {
+
     useEffect(() => {
         document.body.style.cssText = `
             margin: 0;
@@ -47,11 +47,6 @@ const Space: React.FC = () => {
                 </ul>
             </div>
         </nav>
-        {/* <Parallax bgImageAlt="" strength={-200}>
-            <Background className="custom-bg">
-                <img src="../../img/earth.png" alt="" />
-            </Background>
-        </Parallax> */}
 
         <section id="sectionone" className="screen">
             <div id="scene">
