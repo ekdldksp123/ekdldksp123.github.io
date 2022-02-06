@@ -1,127 +1,3 @@
-  body {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-    font-family: "Roboto";
-    list-style: none;
-    box-sizing: border-box;
-    background: #000;
-  }
-  
-  nav {
-    position: fixed;
-    z-index: 100;
-    height: 8vh;
-    width: 96%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 30px;
-  }
-  
-  .logo {
-    color: #fff;
-    font-weight: 600;
-    font-size: 16px;
-  }
-  
-  nav .nav-links ul {
-    display: flex;
-    flex-direction: row;
-  }
-  
-  nav .nav-links ul li {
-    padding: 0 4px;
-    list-style: none;
-  }
-  
-  nav .nav-links ul li img {
-    transform: scale(0.45);
-  }
-  
-  section {
-    height: 100vh;
-    overflow: hidden;
-  }
-
-  .bg {
-    z-index: auto;
-  }
-  
-  .bg img {
-    width: 110vw;
-    height: 110vh;
-    filter: brightness(0.6);
-  }
-  
-  .rock1 {
-    position: absolute !important;
-    left: 10vw !important;
-    top: 20vh !important;
-    z-index: 3 !important;
-  }
-  
-  .rock1 img {
-    width: 40%;
-    filter: brightness(0.5);
-  }
-
-  .text {
-    z-index: 5 !important;
-  }
-  
-  .text h1 {
-    font-family: "AlphaCentauri" !important;
-    font-size: 5vw;
-    color: #fff;
-    letter-spacing: 20px;
-    position: absolute;
-    top: 35vh;
-    left: 34vw;
-  }
-
-  .earth {
-    z-index: 4 !important;
-  }
-  
-  .earth img {
-    width: 400px;
-    height: 400px;
-    position: absolute;
-    left: 34vw;
-    top: 25vh;
-    filter: brightness(0.7);
-  }
-  
-  .mid {
-    position: absolute !important;
-    z-index: 3 !important;
-    left: -150px !important;
-    bottom: -100px !important;
-    top: unset !important;
-  }
-  
-  .mid img {
-    width: 100%;
-    left: -20px;
-    top: 20vh !important;
-    filter: brightness(0.8);
-  }
-  
-  .fore {
-    position: absolute;
-    right: -50px !important;
-    bottom: -200px !important;
-    top: 0px !important;
-    left: unset !important;
-    z-index: 5 !important;
-  }
-  
-  .fore img {
-    width: 400px;
-    height: 110vh;
-    filter: brightness(0.5);
-  }
   
   /* SWIPER */
   
@@ -140,7 +16,7 @@
     z-index: 1;
   }
   
-  .planet-links {
+  .swiper-pagination {
     width: 95%;
     height: 5vh;
     color: #fff;
@@ -151,11 +27,11 @@
     list-style: none;
   }
   
-  .planet-links .swiper-pagination-bullet {
+  .swiper-pagination .swiper-pagination-bullet {
     opacity: 0.2;
     outline: none;
   }
-  .planet-links .swiper-pagination-bullet-active {
+  .swiper-pagination .swiper-pagination-bullet-active {
     color: #fff;
     opacity: 1;
   }

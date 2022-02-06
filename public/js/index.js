@@ -1,11 +1,7 @@
-import Swiper from "swiper";
-import gsap from 'gsap';
-import  {  Parallax ,  Background  }  from  'react-parallax' ;
+var scene = document.getElementById("scene");
+var parallaxInstance = new Parallax(scene);
 
-const scene = document.getElementById("scene");
-const parallaxInstance = new Parallax(scene);
-
-const keys = [
+var keys = [
   "Mercury",
   "Venus",
   "Earth",
@@ -16,7 +12,7 @@ const keys = [
   "Neptune"
 ];
 
-const slider = new Swiper(".swiper", {
+var slider = new Swiper(".swiper", {
   // Optional parameters
   parallax: true,
   slidesPerView: "auto",
@@ -34,6 +30,7 @@ const slider = new Swiper(".swiper", {
 
 slider.on("slideChange", function() {
   console.log("SLIDE CHANGED");
+  
   gsap.to(".slide-text span", 0.2, {
     x: "-100px"
   });

@@ -1,7 +1,13 @@
-import Space from "../components/space/main";
+import { useEffect } from "react";
+import Main from "../components/main";
+import { init } from "../public/styles/config";
 
 export default function App() {
-    return <Space/>;
+    useEffect(() => {
+        init();
+    }, []);
+    
+    return <Main/>;
 }
 
 
