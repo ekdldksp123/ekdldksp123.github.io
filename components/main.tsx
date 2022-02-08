@@ -2,6 +2,7 @@
 import { css, keyframes } from "@emotion/react";
 import styled from '@emotion/styled';
 import Space from "./universe/space";
+import Image from 'next/image';
 
 const Main: React.FC = () => {
 
@@ -21,15 +22,15 @@ const Main: React.FC = () => {
                 <div className="swiper-wrapper">
                 <div className="swiper-slide">
                     <div className="slide-number">
-                    <p><span>Mercury</span></p>
+                        <p><span>Mercury</span></p>
                     </div>
                     <div className="slide-text">
-                    <h4><span>01</span></h4>
+                        <h4><span>01</span></h4>
                     </div>
                     <div className="slide-detail">
                     <p>
-                        <span
-                        >Mercury is the closest planet to the Sun but, perhaps
+                        <span>
+                        Mercury is the closest planet to the Sun but, perhaps
                         surprisingly, it does not have the highest temperatures. It is
                         the second densest planet of the Solar System, but also the
                         smallest planet. The structure of Mercury makes it the most
