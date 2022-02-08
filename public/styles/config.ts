@@ -1,4 +1,4 @@
-const scripts = [
+export const scripts = [
     "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js",
     "https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js",
     "https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js",
@@ -9,6 +9,19 @@ const swiper = 'https://unpkg.com/swiper/swiper-bundle.min.css';
 
 
 export const init = () => {
+    // scripts.forEach((e) => {
+    //     const script = document.createElement('script');
+    //     if(e.search('..') >= 0) {
+    //         script.src = e;
+    //         script.type = "text/javascript";
+    //         document.body.appendChild(script);
+    //     } else {
+    //         script.src = e;
+    //         script.async = true;
+    //         document.body.appendChild(script);
+    //     }
+    // });
+    
     document.body.style.cssText = `
             margin: 0;
             padding: 0;
@@ -23,19 +36,7 @@ export const init = () => {
     meta.name = "viewport";
     meta.content = "width=device-width, initial-scale=1.0";
     document.head.appendChild(meta);
-    
-    scripts.forEach((e) => {
-        const script = document.createElement('script');
-        if(e.search('..') >= 0) {
-            script.src = e;
-            script.type = "text/javascript";
-            document.body.appendChild(script);
-        } else {
-            script.src = e;
-            script.async = true;
-            document.body.appendChild(script);
-        }
-    });
+
     const link = document.createElement('link');
     link.setAttribute('rel', 'stylesheet');
     link.setAttribute('href', swiper);

@@ -1,12 +1,13 @@
 /** @jsxImportSource @emotion/react */
-import { css, keyframes } from "@emotion/react";
+import { css } from "@emotion/react";
 import styled from '@emotion/styled';
 
+
 const Space: React.FC = () => {
-    
+
     return (
-        <Section id="sectionone" className="screen">
-            <div id="scene">
+        <Container>
+            <div id="scene" data-tilt>
                 <div data-depth="0.1" css={background}>
                     <img src="../../img/background.png" alt="" />
                 </div>
@@ -29,16 +30,28 @@ const Space: React.FC = () => {
                     <img src="../../img/foreground.png" alt="" />
                 </div>
             </div>
-        </Section>
+        </Container>
     );
 }
 
 export default Space;
 
-const Section = styled.section`
+const Container = styled.section`
     height: 100vh;
     overflow: hidden;
 `;
+
+const Parallax = styled.div`
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+
+    &:hover {
+        transform: translateZ(-100px);
+        -webkit-transform: translateZ(-100px);
+        -moz-transform: translateZ(-100px);
+    }
+`
 
 const background = css`
     z-index: auto;
