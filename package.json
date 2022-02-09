@@ -4,10 +4,10 @@
   "homepage": "http://ekdldksp123.github.io/",
   "scripts": {
     "dev": "next dev",
-    "build": "sudo next build",
-    "start": "sudo next start",
-    "lint": "sudo next lint",
-    "export": "sudo next export -o build",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "export": "next export -o build",
     "deploy": "gh-pages -d build"
   },
   "dependencies": {
