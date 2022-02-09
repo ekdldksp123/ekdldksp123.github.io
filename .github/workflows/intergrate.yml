@@ -35,7 +35,7 @@ jobs:
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.2.3
         with:
-          ssh-key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          ssh-key: ${{ secrets.DEPLOY_KEY }}
           branch: gh-pages  # 배포될 브랜치
           folder: out # 이 폴더에 있는 파일을 배포
           clean: true # 배포 브랜치에 있는 파일들을 자동으로 삭제
