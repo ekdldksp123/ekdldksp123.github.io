@@ -41,18 +41,6 @@ const Container = styled.section`
     overflow: hidden;
 `;
 
-const Parallax = styled.div`
-    transform-style: preserve-3d;
-    -webkit-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-
-    &:hover {
-        transform: translateZ(-100px);
-        -webkit-transform: translateZ(-100px);
-        -moz-transform: translateZ(-100px);
-    }
-`
-
 const background = css`
     z-index: auto;
     & img {

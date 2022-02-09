@@ -1,14 +1,19 @@
 /** @jsxImportSource @emotion/react */
-import { css } from "@emotion/react";
+import { css, keyframes } from "@emotion/react";
 import styled from '@emotion/styled';
 import Planets from "./universe/planets";
 import Space from "./universe/space";
 import { useEffect } from "react";
 import { init, scripts } from "../public/styles/config";
 import { useScript } from "../public/js/hooks";
+import NavBar from "./nav/NavBar";
+import SendMailForm from "./nav/MailForm";
+import { useState } from "react";
 
 const Main: React.FC = () => {
     
+    const [visible, setIsVisible] = useState<boolean>(false);
+
     const parallax = useScript(scripts[1]);
     const gsap = useScript(scripts[0]);
     const swiper = useScript(scripts[2]);
@@ -21,55 +26,62 @@ const Main: React.FC = () => {
             script.async = true;
             document.body.appendChild(script);
         }
-    },[parallax, swiper, gsap])
+    },[parallax, swiper, gsap]);
+
+
+    useEffect(() => {
+        let gmail: HTMLElement = document.getElementById("gmail");
+        gmail.addEventListener('click', (e:Event) => {
+            const slide: HTMLElement = document.getElementById("slide");
+            slide.parentElement.style.transform = `translateX(-100%)`;
+            setIsVisible(true);
+        });
+    },[]);
 
     return (
         <>
-        <Nav>
-            <div css={logo}>Explore.</div>
-            <Links>
-                <Link><img src="../../img/linkedin.png" alt="" /></Link>
-                <Link><img src="../../img/facebook.png" alt="" /></Link>
-                <Link><img src="../../img/instagram-logo.png" alt="" /></Link>
-            </Links>
-        </Nav>
-        <Space />
-        <Planets />
-    </>
+            <Container>
+                <Slide>
+                    <Page id="slide">
+                        <NavBar/>
+                        <Space/>
+                    </Page>
+                    <Page className="page">
+                        <SendMailForm isVisible={visible}/>
+                    </Page>
+                </Slide>
+            </Container>
+            <Planets/>
+        </>
     );
 }
 
 export default Main;
 
-const Nav = styled.nav`
-    position: fixed;
-    z-index: 100;
-    height: 8vh;
-    width: 96%;
+
+const Container = styled.div`
+    width: 100vw;
+    height: 100wh;
+    overflow: hidden;
+`
+
+const Slide = styled.div`
+    height: 100% !important;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 30px;
-`;
-
-const logo = css`
-    color: #fff;
-    font-weight: 600;
-    font-size: 16px;
+    flex-wrap: nowrap;
+    transition: all .5s linear;
+    transform: translateX(0);
 `
 
-const Links = styled.ul`
-    display: flex;
-    flex-direction: row;
+const Page = styled.div`
+    flex: 0 0 auto;
+    height: 100% !important;
+    width: 100%;
+    transition: 1s;
+    left: 0%;
+    opacity: 1;
+    position: relative;
 `
 
-const Link = styled.li`
-    padding: 0 4px;
-    list-css: none;
-
-    & img {
-        transform: scale(0.5);
-    }
-`
 
 

@@ -22,7 +22,7 @@ const Planets: React.FC = () => {
                             smallest planet. The structure of Mercury makes it the most
                             similar planet to Earth. 
                             <br/>
-                            안녕하세요, 저는 2년차 주니어 개발자 김빈채입니다 🚀
+                            안녕하세요, 저는 2년차 주니어 개발자 김빈채에요 🚀
                             </span>
                         </p>
                     </SlideDetail>
@@ -53,7 +53,7 @@ const Planets: React.FC = () => {
                         planets without a satellite, even though Mercury is closer to
                         the sun, Venus is the hottest planet. 
                         <br/>
-                        저는 야놀자 계열 호텔 및 리조트 솔루션 회사에서 CMS 2.0 프론트 및 백엔드를 담당하며 경험을 쌓았구요.
+                        2020.11 ~ 부터 야놀자 계열 호텔 및 리조트 솔루션 회사에서 CMS 2.0 프론트 및 백엔드 신규 개발을 통해 업무 경험을 쌓아왔습니다.
                         </span>
                     </p>
                     </SlideDetail>
@@ -83,7 +83,7 @@ const Planets: React.FC = () => {
                         planet in the Solar System with the highest density. It is
                         currently the only known location where life is present.
                         <br/>
-                        능력있는 프론트엔드, 풀스택을 지향하고 자바스크립트를 가장 좋아해요 🧡
+                        포지션으로는 능력있는 프론트엔드, 풀스택을 지향하고, 언어는 자바스크립트를 가장 좋아합니다 🧡
                         </span>
                     </p>
                     </SlideDetail>
@@ -114,7 +114,7 @@ const Planets: React.FC = () => {
                         surface features reminiscent both of the impact craters of the
                         Moon, and the valleys, deserts and polar ice caps of Earth.
                         <br/>
-                        같은 효과 및 기능을 줘도 화면에서 이렇게 매끄럽게, 에러 없이 돌아갈 때 제일 뿌듯하고 행복해요 💚
+                        저는 같은 효과 및 기능을 줘도 화면에서 이렇게 매끄럽게, 에러 없이 돌아갈 때 제일 뿌듯하고 행복합니다 💚
                         </span>
                     </p>
                     </SlideDetail>
