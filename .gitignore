@@ -19,6 +19,7 @@
 
 # production
 .eslintrc.json
+/.next/
 
 # misc
 .DS_Store

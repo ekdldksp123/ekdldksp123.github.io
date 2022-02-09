@@ -21,7 +21,8 @@ const Planets: React.FC = () => {
                             the second densest planet of the Solar System, but also the
                             smallest planet. The structure of Mercury makes it the most
                             similar planet to Earth. 
-                            안녕하세요, 저는 2년차 주니어 개발자 김빈채입니다.
+                            <br/>
+                            안녕하세요, 저는 2년차 주니어 개발자 김빈채입니다 🚀
                             </span>
                         </p>
                     </SlideDetail>
@@ -51,7 +52,8 @@ const Planets: React.FC = () => {
                         sixth-largest. Together with Mercury, they are the only
                         planets without a satellite, even though Mercury is closer to
                         the sun, Venus is the hottest planet. 
-                        저는 능력있는 프론트엔드, 풀스택을 지향하고 자바스크립트를 가장 좋아해요.
+                        <br/>
+                        저는 야놀자 계열 호텔 및 리조트 솔루션 회사에서 CMS 2.0 프론트 및 백엔드를 담당하며 경험을 쌓았구요.
                         </span>
                     </p>
                     </SlideDetail>
@@ -80,7 +82,8 @@ const Planets: React.FC = () => {
                         Earth is the third planet from the Sun and the fifth largest
                         planet in the Solar System with the highest density. It is
                         currently the only known location where life is present.
-                        같은 효과 및 기능을 줘도 화면에서 이렇게 매끄럽게, 깨짐 없이 돌아갈 때 너무 행복해요.
+                        <br/>
+                        능력있는 프론트엔드, 풀스택을 지향하고 자바스크립트를 가장 좋아해요 🧡
                         </span>
                     </p>
                     </SlideDetail>
@@ -110,7 +113,8 @@ const Planets: React.FC = () => {
                         second-smallest planet with a thin atmosphere, having the
                         surface features reminiscent both of the impact craters of the
                         Moon, and the valleys, deserts and polar ice caps of Earth.
-                        나아가서 사용자들이 보면서 시각적으로 끌리고 기분 좋게 이용할 수 있는 앱을 만들고 싶어요.
+                        <br/>
+                        같은 효과 및 기능을 줘도 화면에서 이렇게 매끄럽게, 에러 없이 돌아갈 때 제일 뿌듯하고 행복해요 💚
                         </span>
                     </p>
                     </SlideDetail>
@@ -135,12 +139,13 @@ const Planets: React.FC = () => {
                     </SlideText>
                     <SlideDetail className="slide-detail">
                     <p>
-                        <span
-                        >Jupiter is the fifth planet from the Sun and the largest
+                        <span>
+                        Jupiter is the fifth planet from the Sun and the largest
                         planet of the Solar System. It is the oldest planet of the
                         Solar System thus it was the first to take shape out of the
                         remains of the solar nebula.
-                        주로 사용하는 프레임워크는 React 지만, Svelte 도 재밌게 배우고 있어요.
+                        <br/>
+                        더 나아가서는 사용자들이 보면서 시각적으로 끌리고 편리하게 이용할 수 있는 어플리케이션을 만들고 싶습니다 💛
                         </span>
                     </p>
                     </SlideDetail>
@@ -170,6 +175,8 @@ const Planets: React.FC = () => {
                         planetary rings in the Solar System. It is the second-largest
                         planet after Jupiter, and recently, with many other moons
                         being discovered, it surpassed the number of Jupiter’s moons.
+                        <br/>
+                        제가 주로 사용하는 프레임워크는 React 지만, Svelte 도 겸하고 있어요 💜
                         </span>
                     </p>
                     </SlideDetail>
@@ -195,10 +202,12 @@ const Planets: React.FC = () => {
                     </SlideText>
                     <SlideDetail className="slide-detail">
                     <p>
-                        <span
-                        >Uranus is the seventh planet discovered in the Solar System
+                        <span>
+                        Uranus is the seventh planet discovered in the Solar System
                         that also led to the discovery of the last planet, Neptune
                         they are both referred to as ice giants.
+                        <br/>
+                        아 혹시 궁금하실까봐... 제 이메일은 punchlips97@gmail.com 이에요💌
                         </span>
                     </p>
                     </SlideDetail>
@@ -223,10 +232,12 @@ const Planets: React.FC = () => {
                     </SlideText>
                     <SlideDetail className="slide-detail">
                     <p>
-                        <span
-                        >Neptune is the fourth largest and the farthest planet of the
+                        <span>
+                        Neptune is the fourth largest and the farthest planet of the
                         Solar System with the most powerful wind speeds out of all the
                         planets. It is the smallest of the gas giants.
+                        <br/>
+                        요기까지 제 소개글 봐주셔서 감사합니다❤️
                         </span>
                     </p>
                     </SlideDetail>
