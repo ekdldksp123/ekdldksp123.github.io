@@ -1,7 +1,7 @@
 {
   "name": "vivid",
   "private": true,
-  "homepage": "http://ekdldksp123.github.io/",
+  "homepage": "https://ekdldksp123.github.io/",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

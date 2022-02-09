@@ -22,7 +22,7 @@ const Planets: React.FC = () => {
                             smallest planet. The structure of Mercury makes it the most
                             similar planet to Earth. 
                             <br/>
-                            안녕하세요, 저는 2년차 주니어 개발자 김빈채에요 🚀
+                            안녕하세요, 저는 2년차 주니어 개발자 김빈채입니다 🚀
                             </span>
                         </p>
                     </SlideDetail>
@@ -53,7 +53,7 @@ const Planets: React.FC = () => {
                         planets without a satellite, even though Mercury is closer to
                         the sun, Venus is the hottest planet. 
                         <br/>
-                        2020.11 ~ 부터 야놀자 계열 호텔 및 리조트 솔루션 회사에서 CMS 2.0 프론트 및 백엔드 신규 개발을 통해 업무 경험을 쌓아왔습니다.
+                        저는 2020.11 ~ 부터 야놀자 계열 호텔 및 리조트 솔루션 회사에서 CMS 2.0 프론트 및 백엔드 업무 경력을 쌓아왔어요.
                         </span>
                     </p>
                     </SlideDetail>
@@ -114,7 +114,7 @@ const Planets: React.FC = () => {
                         surface features reminiscent both of the impact craters of the
                         Moon, and the valleys, deserts and polar ice caps of Earth.
                         <br/>
-                        저는 같은 효과 및 기능을 줘도 화면에서 이렇게 매끄럽게, 에러 없이 돌아갈 때 제일 뿌듯하고 행복합니다 💚
+                        같은 효과 및 기능을 줘도 화면에서 이렇게 매끄럽게, 에러 없이 돌아갈 때가 제일 뿌듯하고 행복해요 💚
                         </span>
                     </p>
                     </SlideDetail>
@@ -145,7 +145,7 @@ const Planets: React.FC = () => {
                         Solar System thus it was the first to take shape out of the
                         remains of the solar nebula.
                         <br/>
-                        더 나아가서는 사용자들이 보면서 시각적으로 끌리고 편리하게 이용할 수 있는 어플리케이션을 만들고 싶습니다 💛
+                        더 나아가서 사용자들이 보면서 시각적으로 끌리고 편리하게 이용할 수 있는 어플리케이션을 만들고 싶어요 💛
                         </span>
                     </p>
                     </SlideDetail>
@@ -176,7 +176,7 @@ const Planets: React.FC = () => {
                         planet after Jupiter, and recently, with many other moons
                         being discovered, it surpassed the number of Jupiter’s moons.
                         <br/>
-                        제가 주로 사용하는 프레임워크는 React 지만, Svelte 도 겸하고 있어요 💜
+                        제가 주로 사용하는 프레임워크는 React 지만, Svelte 도 겸하고 있습니다 💜
                         </span>
                     </p>
                     </SlideDetail>
@@ -207,7 +207,7 @@ const Planets: React.FC = () => {
                         that also led to the discovery of the last planet, Neptune
                         they are both referred to as ice giants.
                         <br/>
-                        아 혹시 궁금하실까봐... 제 이메일은 punchlips97@gmail.com 이에요💌
+                        아 그리고 혹시 아직 상단의 Gmail 아이콘 클릭 안해보셨다면 꼭 눌러봐주세요오 💌
                         </span>
                     </p>
                     </SlideDetail>
@@ -237,7 +237,7 @@ const Planets: React.FC = () => {
                         Solar System with the most powerful wind speeds out of all the
                         planets. It is the smallest of the gas giants.
                         <br/>
-                        요기까지 제 소개글 봐주셔서 감사합니다❤️
+                        히든 페이지 보셨나요? ㅎㅎ 요기까지 제 소개글 봐주셔서 감사합니다❤️
                         </span>
                     </p>
                     </SlideDetail>

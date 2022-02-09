@@ -7,7 +7,7 @@ import { useEffect } from "react";
 import { init, scripts } from "../public/styles/config";
 import { useScript } from "../public/js/hooks";
 import NavBar from "./nav/NavBar";
-import SendMailForm from "./nav/MailForm";
+import SendMail from "./nav/SendMail";
 import { useState } from "react";
 
 const Main: React.FC = () => {
@@ -47,7 +47,7 @@ const Main: React.FC = () => {
                         <Space/>
                     </Page>
                     <Page className="page">
-                        <SendMailForm isVisible={visible}/>
+                        <SendMail isVisible={visible}/>
                     </Page>
                 </Slide>
             </Container>
