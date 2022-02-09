@@ -27,8 +27,7 @@ jobs:
           npm run build
           npm run export
         env:
-            ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
-            CI: true
+            CI: ''
       - run: touch out/.nojekyll
 
       - name: Deploy 🚀
