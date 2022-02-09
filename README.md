@@ -11,3 +11,9 @@
 ### 2022-02-08
 - emotion.js 적용 (css 파일 삭제><)
 - package.json 내용 수정하고 git action 다시 추가
+
+### 2022-02-09
+- .gitingore 추가
+- next.config.js 추가
+- ssh rsa key 생성 후 repo에 등록
+- yml 파일 수정

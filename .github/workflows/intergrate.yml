@@ -18,9 +18,12 @@ jobs:
         with:
           path: ${{ github.workspace }}/.next/cache
           key: ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}
-
+      - name: Permission Grant
+      - run: npm 
       - name: Install and Build 🔧 # This example project is built using npm and outputs the result to the 'build' folder. Replace with the commands required to build your project, or remove this step entirely if your site is pre-built.
         uses: actions/setup-node@v1
+          with:
+            ssh-private-key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
       - run: |
           npm i
           npm run build
