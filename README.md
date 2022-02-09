@@ -17,3 +17,8 @@
 - next.config.js 추가
 - ssh rsa key 생성 후 repo에 등록
 - yml 파일 수정
+
+### 2022-02-10
+- img -> next/image 변경
+- 컴포넌트 전체 분리 완료
+- Gmail 아이콘 클릭시 form 화면으로 슬라이드 추가
