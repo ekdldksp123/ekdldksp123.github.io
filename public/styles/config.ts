@@ -9,19 +9,6 @@ const swiper = 'https://unpkg.com/swiper/swiper-bundle.min.css';
 
 
 export const init = () => {
-    // scripts.forEach((e) => {
-    //     const script = document.createElement('script');
-    //     if(e.search('..') >= 0) {
-    //         script.src = e;
-    //         script.type = "text/javascript";
-    //         document.body.appendChild(script);
-    //     } else {
-    //         script.src = e;
-    //         script.async = true;
-    //         document.body.appendChild(script);
-    //     }
-    // });
-    
     document.body.style.cssText = `
             margin: 0;
             padding: 0;
