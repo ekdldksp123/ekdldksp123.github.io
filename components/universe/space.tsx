@@ -1,33 +1,64 @@
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
 import styled from '@emotion/styled';
-
+import Image from "next/image";
 
 const Space: React.FC = () => {
 
     return (
         <Container>
             <div id="scene" data-tilt>
+                
                 <div data-depth="0.1" css={background}>
-                    <img src="../../img/background.png" alt="" />
+                    <Image 
+                        src="/img/background.png" 
+                        alt="" 
+                        layout="fill"
+                        loading="eager"
+                        priority={true}
+                    />
                 </div>
                 <div data-depth="0.2" css={rock1}>
-                    <img src="../../img/rock.png" alt="" />
+                    <img src="/img/rock.png" alt=""/>
                 </div>
                 <div data-depth="1.2" css={earth}>
-                    <img src="../../img/earth.png" alt="" />
+                    <Image 
+                        src="../../img/earth.png" 
+                        alt="" 
+                        layout="fill"
+                        loading="eager"
+                        priority={true}
+                    />
                 </div>
                 <div data-depth="1.2" css={moon}>
-                    <img src="../../img/moon.png" alt="" />
+                    <Image 
+                        src="/img/moon.png" 
+                        alt="" 
+                        layout="fill"
+                        loading="eager"
+                        priority={true}
+                    />
                 </div>
                 <div data-depth="0.1" css={text}>
                     <h1>PLANETS</h1>
                 </div>
                 <div data-depth="0.4" css={mid}>
-                    <img src="../../img/mid.png" alt="" />
+                    <Image 
+                        src="/img/mid.png" 
+                        alt="" 
+                        layout="fill"
+                        loading="eager"
+                        priority={true}
+                    />
                 </div>
                 <div data-depth="0.1" css={foreground}>
-                    <img src="../../img/foreground.png" alt="" />
+                    <Image 
+                        src="/img/foreground.png" 
+                        alt="" 
+                        layout="fill"
+                        loading="eager"
+                        priority={true}
+                    />
                 </div>
             </div>
         </Container>
@@ -43,9 +74,9 @@ const Container = styled.section`
 
 const background = css`
     z-index: auto;
+    width: 110vw;
+    height: 110vh;
     & img {
-        width: 110vw;
-        height: 110vh;
         filter: brightness(0.6);  
     }
 `
@@ -64,12 +95,13 @@ const rock1 = css`
 
 const earth = css`
     z-index: 4 !important;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    left: 34vw !important;
+    top: 25vh !important;
+    
     & img {
-        width: 400px;
-        height: 400px;
-        position: absolute;
-        left: 34vw;
-        top: 25vh;
         filter: brightness(0.7);
     }
 `
@@ -89,12 +121,13 @@ const text = css`
 
 const moon = css`
     z-index: 4 !important;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 60vw !important;
+    top: 25vh !important;
+    
     & img {
-        width: 200px;
-        height: 200px;
-        position: absolute;
-        left: 60vw;
-        top: 25vh;
         filter: brightness(0.7);
     }
 `
@@ -106,10 +139,10 @@ const mid = css`
     bottom: -100px !important;
     top: unset !important;
 
+    width: 100%;
+    left: -20px;
+    top: 20vh !important;
     & img {
-        width: 100%;
-        left: -20px;
-        top: 20vh !important;
         filter: brightness(0.8);
     }
 `
@@ -121,9 +154,10 @@ const foreground = css`
     top: 0px !important;
     left: unset !important;
     z-index: 5 !important;
+    width: 400px;
+    height: 110vh;
+
     & img {
-        width: 400px;
-        height: 110vh;
         filter: brightness(0.5);
     }
 `;

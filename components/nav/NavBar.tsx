@@ -17,6 +17,8 @@ const NavBar:React.FC = () => {
                         height={45} 
                         onClick={() => window.open("https://github.com/ekdldksp123")}
                         css={icon}
+                        loading="eager"
+                        priority={true}
                     />
                 </Link>
                 <Link>
@@ -27,6 +29,8 @@ const NavBar:React.FC = () => {
                         width={45} 
                         height={45} 
                         css={icon}
+                        loading="eager"
+                        priority={true}
                     />
                 </Link>
                 <Link>
@@ -37,6 +41,8 @@ const NavBar:React.FC = () => {
                         height={45} 
                         onClick={() => window.open("https://vincode.tistory.com/")}
                         css={icon}
+                        loading="eager"
+                        priority={true}
                     />
                 </Link>
             </Links>
@@ -82,5 +88,6 @@ const icon = css`
     transition: .2s;
     &:hover {
         transform: scale(1.008);
+        cursor: pointer;
     }
 `
