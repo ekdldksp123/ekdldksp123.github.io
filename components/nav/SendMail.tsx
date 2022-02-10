@@ -59,7 +59,6 @@ const falling = keyframes`
     }
     70%{
         opacity: 1;
-
     }
     100%{
         transform: translateY(200vh);

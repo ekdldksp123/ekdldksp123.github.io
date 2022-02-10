@@ -32,25 +32,31 @@ const Main: React.FC = () => {
     useEffect(() => {
         let gmail: HTMLElement = document.getElementById("gmail");
         gmail.addEventListener('click', (e:Event) => {
-            const slide: HTMLElement = document.getElementById("slide");
+            const slide: HTMLElement = document.getElementById("from");
             slide.parentElement.style.transform = `translateX(-100%)`;
             setIsVisible(true);
         });
+        let arrow: HTMLElement = document.getElementById("back");
+        arrow.addEventListener('click', (e:Event) => {
+            const slide: HTMLElement = document.getElementById("to");
+            slide.parentElement.style.transform = `translateX(0%)`;
+            setIsVisible(false);
+        })
     },[]);
 
     return (
         <>
-            <Container>
+            <Wrapper>
                 <Slide>
-                    <Page id="slide">
+                    <Page id="from">
                         <NavBar/>
                         <Space/>
                     </Page>
-                    <Page className="page">
+                    <Page id="to">
                         <SendMail isVisible={visible}/>
                     </Page>
                 </Slide>
-            </Container>
+            </Wrapper>
             <Planets/>
         </>
     );
@@ -58,8 +64,7 @@ const Main: React.FC = () => {
 
 export default Main;
 
-
-const Container = styled.div`
+const Wrapper = styled.div`
     width: 100vw;
     height: 100wh;
     overflow: hidden;

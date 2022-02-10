@@ -145,7 +145,7 @@ const Planets: React.FC = () => {
                         Solar System thus it was the first to take shape out of the
                         remains of the solar nebula.
                         <br/>
-                        더 나아가서 사용자들이 보면서 시각적으로 끌리고 편리하게 이용할 수 있는 어플리케이션을 만들고 싶어요 💛
+                        더 나아가서 사용자들이 보면서 시각적으로 끌리고 편리하게 이용할 수 있는 어플리케이션을 만들고 싶습니다 💛
                         </span>
                     </p>
                     </SlideDetail>
@@ -176,7 +176,7 @@ const Planets: React.FC = () => {
                         planet after Jupiter, and recently, with many other moons
                         being discovered, it surpassed the number of Jupiter’s moons.
                         <br/>
-                        제가 주로 사용하는 프레임워크는 React 지만, Svelte 도 겸하고 있습니다 💜
+                        제가 주로 사용하는 프레임워크는 React 지만, ReactNative, Svelte 도 겸하고 있습니다. 모바일 화면 개발도 좋아해요 💜
                         </span>
                     </p>
                     </SlideDetail>
@@ -237,7 +237,7 @@ const Planets: React.FC = () => {
                         Solar System with the most powerful wind speeds out of all the
                         planets. It is the smallest of the gas giants.
                         <br/>
-                        히든 페이지 보셨나요? ㅎㅎ 요기까지 제 소개글 봐주셔서 감사합니다❤️
+                        히든 페이지 보셨나요? :) 그럼 요기까지 제 사이트 봐주셔서 감사합니다❤️
                         </span>
                     </p>
                     </SlideDetail>
@@ -276,27 +276,30 @@ const Container = styled.section`
 
 const Pagination = styled.div`
     width: 95%;
-    height: 5vh;
+    height: 10vh;
     color: #fff;
     position: absolute;
     bottom: 0;
     display: flex;
     justify-content: space-evenly;
     list-style: none;
-
-    & .swiper-pagination-bullet: {
+    font-size: 20px;
+    
+    & .swiper-pagination-bullet {
         opacity: 0.2;
         outline: none;
     }
 
-    & .swiper-pagination-bullet-active: {
+    & .swiper-pagination-bullet-active {
         color: #fff;
         opacity: 1;   
+        cursor: pointer;
     }
 
-    & .swiper-pagination-bullet: {
+    & .swiper-pagination-bullet: active {
         background: transparent;
     }
+
 `
 
 const BackgroundRock = styled.div`
