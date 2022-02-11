@@ -25,7 +25,7 @@ const SendForm:React.FC = () => {
     const messageRef = useRef<HTMLTextAreaElement>(null);
 
     useEffect(() => {
-        init(process.env.NEXT_PUBLIC_USER_ID);
+        init('user_KlHkwRpuuPm2dqMdsz6Hs');
     },[]);
 
     const onChangeHandler = (e: React.ChangeEvent<any>):void => {
@@ -38,10 +38,7 @@ const SendForm:React.FC = () => {
         else if(mail.email === '') emailRef.current?.focus();
         else if(mail.message === '') messageRef.current?.focus();
         else {
-            const serviceId = process.env.NEXT_PUBLIC_SERVICE_ID;
-            const templateId = process.env.NEXT_PUBLIC_TEMPLATE_ID;
-            
-            send(serviceId, templateId,{...mail})
+            send('vivid', 'template_fct696p',{...mail})
                 .then((res:EmailJSResponseStatus) => {
                     window.location.reload();
                 }, (err:Error) => console.log(err));
