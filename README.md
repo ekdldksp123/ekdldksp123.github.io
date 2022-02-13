@@ -30,5 +30,8 @@
 - default scrollbar 이뿌게 변경
 - falling stars 배경 구현
 
-
-_이제 배포만 제대로 되면 되..._
+### 2022-02-13
+- planet details overflow 시 스크롤 적용
+- font 깨짐 현상 해결
+- 이메일 정규식 검사
+- 이메일 전송 버튼 클릭 후 모달 팝업

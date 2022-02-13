@@ -12,7 +12,7 @@ import {
     Span,
     BackgroundRock,
     Pagination,
-} from './Planets.styles';
+} from './planets.styles';
 
 const Planets: React.FC = () => {
     return (
