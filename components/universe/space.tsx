@@ -108,7 +108,7 @@ const earth = css`
 const text = css`
     z-index: 5 !important;
     & h1 {
-        font-family: "AlphaCentauri" !important;
+        font-family: 'Coolwonder', sans-serif;
         font-size: 5vw;
         color: #fff;
         letter-spacing: 20px;

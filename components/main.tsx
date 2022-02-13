@@ -1,11 +1,10 @@
 /** @jsxImportSource @emotion/react */
-import { css, keyframes } from "@emotion/react";
 import styled from '@emotion/styled';
-import Planets from "./universe/planets";
-import Space from "./universe/space";
 import { useEffect } from "react";
 import { init, scripts } from "../public/styles/config";
 import { useScript } from "../public/js/hooks";
+import Planets from "./universe/Planets";
+import Space from "./universe/Space";
 import NavBar from "./nav/NavBar";
 import SendMail from "./nav/SendMail";
 import { useState } from "react";
@@ -27,7 +26,6 @@ const Main: React.FC = () => {
             document.body.appendChild(script);
         }
     },[parallax, swiper, gsap]);
-
 
     useEffect(() => {
         let gmail: HTMLElement = document.getElementById("gmail");

@@ -102,7 +102,7 @@ export const SlideNumber = styled.div`
     z-index: 10;
     & p {
         font-size: 40px;
-        font-family: 'alpha-centauri-Medium' !important;
+        font-family: 'Coolwonder', sans-serif;
         color: #fff;
         position: relative;
     }
