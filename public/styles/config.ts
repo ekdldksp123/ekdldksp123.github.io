@@ -7,25 +7,35 @@ export const scripts = [
 
 const swiper = 'https://unpkg.com/swiper/swiper-bundle.min.css';
 
-
 export const init = () => {
-    document.body.style.cssText = `
-            margin: 0;
-            padding: 0;
-            overflow-x: hidden;
-            font-family: "Roboto";
-            list-css: none;
-            box-sizing: border-box;
-            background: #000;
-        `;
-
-    const meta = document.createElement('meta');
-    meta.name = "viewport";
-    meta.content = "width=device-width, initial-scale=1.0";
-    document.head.appendChild(meta);
 
     const link = document.createElement('link');
     link.setAttribute('rel', 'stylesheet');
     link.setAttribute('href', swiper);
     document.head.appendChild(link);
 };
+
+export const globalCss = `
+::-webkit-scrollbar {
+    width: 10px; 
+}
+::-webkit-scrollbar-track {
+    background: transparent; 
+    border-radius: 10px; 
+}
+::-webkit-scrollbar-thumb {
+    height: 5%; 
+    background: linear-gradient(#c2e59c, #64b3f4); 
+    border-radius: 10px; 
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+    list-css: none;
+    box-sizing: border-box;
+    background: #000;
+}
+`;

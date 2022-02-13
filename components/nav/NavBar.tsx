@@ -53,7 +53,9 @@ const NavBar:React.FC = () => {
 export default NavBar;
 
 const Nav = styled.nav`
-    position: fixed;
+    position: fixed !important;
+    top: 0;
+    left: 0;
     z-index: 100;
     height: 8vh;
     width: 96%;

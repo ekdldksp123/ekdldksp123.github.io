@@ -1,5 +1,18 @@
 /** @jsxImportSource @emotion/react */
-import styled from '@emotion/styled';
+import {
+    Container,
+    Swiper,
+    SwiperWrapper,
+    SwiperSlide,
+    SlideNumber,
+    SlideText,
+    SlideDetail,
+    SlideDetailFacts,
+    SlideImage,
+    Span,
+    BackgroundRock,
+    Pagination,
+} from './planets.styles';
 
 const Planets: React.FC = () => {
     return (
@@ -30,7 +43,7 @@ const Planets: React.FC = () => {
                     <div>
                         <h5>
                         ORBIT PERIOD:
-                        <Span>87.97 Earth Days</Span>
+                        <Span> 87.97 Earth Days</Span>
                         </h5>
                         <h5>KNOWN MOONS: <Span>None</Span></h5>
                     </div>
@@ -45,27 +58,27 @@ const Planets: React.FC = () => {
                     <SlideText className="slide-text">
                         <h4><span>02</span></h4>
                     </SlideText>
-                    <SlideDetail className="slide-detail">
-                    <p>
-                        <span>
-                        Venus is the second planet from the Sun and the
-                        sixth-largest. Together with Mercury, they are the only
-                        planets without a satellite, even though Mercury is closer to
-                        the sun, Venus is the hottest planet. 
-                        <br/>
-                        저는 2020.11 ~ 부터 야놀자 계열 호텔 및 리조트 솔루션 회사에서 CMS 2.0 프론트 및 백엔드 업무 경력을 쌓아왔어요.
-                        </span>
-                    </p>
-                    </SlideDetail>
-                    <SlideDetailFacts className="slide-detail-facts">
-                    <div>
-                        <h5>
-                        ORBIT PERIOD:
-                        <Span>224.70 Earth days</Span>
-                        </h5>
-                        <h5>KNOWN MOONS: <Span>None</Span></h5>
-                    </div>
-                    </SlideDetailFacts>
+                        <SlideDetail className="slide-detail">
+                        <p>
+                            <span>
+                            Venus is the second planet from the Sun and the
+                            sixth-largest. Together with Mercury, they are the only
+                            planets without a satellite, even though Mercury is closer to
+                            the sun, Venus is the hottest planet. 
+                            <br/>
+                            저는 2020.11 ~ 부터 야놀자 계열 호텔 및 리조트 솔루션 회사에서 CMS 2.0 프론트 및 백엔드 업무 경력을 쌓아왔어요.
+                            </span>
+                        </p>
+                        </SlideDetail>
+                        <SlideDetailFacts className="slide-detail-facts">
+                        <div>
+                            <h5>
+                            ORBIT PERIOD:
+                            <Span> 224.70 Earth days</Span>
+                            </h5>
+                            <h5>KNOWN MOONS: <Span>None</Span></h5>
+                        </div>
+                        </SlideDetailFacts>
                     <SlideImage className="slide-img"></SlideImage>
                 </SwiperSlide>
 
@@ -91,7 +104,7 @@ const Planets: React.FC = () => {
                     <div>
                         <h5>
                         ORBIT PERIOD:
-                        <Span>365.26 Earth days</Span>
+                        <Span> 365.26 Earth days</Span>
                         </h5>
                         <h5>KNOWN MOONS: <Span>1</Span></h5>
                     </div>
@@ -122,7 +135,7 @@ const Planets: React.FC = () => {
                     <div>
                         <h5>
                         ORBIT PERIOD:
-                        <Span>686.98 Earth days</Span>
+                        <Span> 686.98 Earth days</Span>
                         </h5>
                         <h5>KNOWN MOONS: <Span>2</Span></h5>
                     </div>
@@ -153,7 +166,7 @@ const Planets: React.FC = () => {
                     <div>
                         <h5>
                         ORBIT PERIOD:
-                        <Span>4,332.82 Earth days</Span>
+                        <Span> 4,332.82 Earth days</Span>
                         </h5>
                         <h5>KNOWN MOONS: <Span>67</Span></h5>
                     </div>
@@ -184,7 +197,7 @@ const Planets: React.FC = () => {
                     <div>
                         <h5>
                         ORBIT PERIOD:
-                        <Span>10,755.70 Earth days</Span>
+                        <Span> 10,755.70 Earth days</Span>
                         </h5>
                         <h5>KNOWN MOONS: <Span>62</Span></h5>
                     </div>
@@ -215,7 +228,7 @@ const Planets: React.FC = () => {
                     <div>
                         <h5>
                         ORBIT PERIOD:
-                        <Span>30,687.15 Earth days</Span>
+                        <Span> 30,687.15 Earth days</Span>
                         </h5>
                         <h5>KNOWN MOONS: <Span>27</Span></h5>
                     </div>
@@ -245,7 +258,7 @@ const Planets: React.FC = () => {
                     <div>
                         <h5>
                         ORBIT PERIOD:
-                        <Span>60,190.03 Earth days</Span>
+                        <Span> 60,190.03 Earth days</Span>
                         </h5>
                         <h5>KNOWN MOONS: <Span>14</Span></h5>
                     </div>
@@ -267,182 +280,3 @@ const Planets: React.FC = () => {
 
 export default Planets;
 
-const Container = styled.section`
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    position: relative;
-`
-
-const Pagination = styled.div`
-    width: 95%;
-    height: 10vh;
-    color: #fff;
-    position: absolute;
-    bottom: 0;
-    display: flex;
-    justify-content: space-evenly;
-    list-style: none;
-    font-size: 20px;
-    
-    & .swiper-pagination-bullet {
-        opacity: 0.2;
-        outline: none;
-    }
-
-    & .swiper-pagination-bullet-active {
-        color: #fff;
-        opacity: 1;   
-        cursor: pointer;
-    }
-
-    & .swiper-pagination-bullet: active {
-        background: transparent;
-    }
-
-`
-
-const BackgroundRock = styled.div`
-    position: absolute;
-    transform: scale(0.2);
-    filter: brightness(0.3);
-    top: 20vh;
-    left: 0;
-    z-index: 1;
-`
-
-const Swiper = styled.div`
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    padding: 50px 0;
-`
-
-const SwiperWrapper = styled.div`
-    transition-delay: 0.5s;
-`
-
-const SwiperSlide = styled.div`
-    height: 400px !important;
-    width: 90% !important;
-    background: transparent;
-
-    &:nth-child(1) .slide-img {
-        background-image: url("/img/mercury.png");
-    }
-    &:nth-child(2) .slide-img {
-        background-image: url("/img/venus.png");
-    }
-    &:nth-child(3) .slide-img {
-        background-image: url("/img/earth1.png");
-    }
-    &:nth-child(4) .slide-img {
-        background-image: url("/img/mars.png");
-    }
-    &:nth-child(5) .slide-img {
-        background-image: url("/img/jupiter.png");
-    }
-    &:nth-child(6) .slide-img {
-        background-image: url("/img/saturn.png");
-    }
-    &:nth-child(7) .slide-img {
-        background-image: url("/img/uranus.png");
-    }
-    &:nth-child(8) .slide-img {
-        background-image: url("/img/neptune.png");
-    }
-
-`
-
-const SlideImage = styled.div`
-    background-position: "center";
-    background-repeat: no-repeat !important;
-    background-size: contain;
-    width: 30%;
-    height: 100%;
-`
-
-const SlideNumber = styled.div`
-    position: absolute;
-    top: -30px;
-    left: 30%;
-    width: 200px;
-    height: 120px;
-    overflow: hidden;
-    z-index: 10;
-
-    & p {
-        font-size: 40px;
-        font-family: "AlphaCentauri" !important;
-        color: #fff;
-        position: relative;
-    }
-    & span {
-        position: absolute;
-    }
-`
-
-const SlideDetail = styled.div`
-    position: absolute;
-    top: 130px;
-    left: 30%;
-    z-index: 10;
-    width: 50%;
-    height: 400px;
-    overflow: hidden;
-    
-    & p {
-        font-size: 14px;
-        color: #fff;
-        position: relative;
-        opacity: 0.8;
-        line-height: 30px;
-    }
-    & span {
-        position: absolute;
-    }
-`
-
-const SlideDetailFacts = styled.div`
-    position: absolute;
-    top: 240px;
-    left: 30%;
-    z-index: 10;
-    width: 50%;
-    height: 400px;
-    overflow: hidden;
-    color: #fff;
-
-    & div {
-        display: flex;
-        position: relative;
-    }
-    & h5 {
-        margin-right: 20px;
-    }
-`
-
-const SlideText = styled.div`
-    position: absolute;
-    top: -150px;
-    left: 22%;
-    z-index: 9;
-    width: 200px;
-    height: 400px;
-    overflow: hidden;
-    opacity: 0.1 !important;
-
-    & h4 {
-        color: #fff;
-        font-size: 100px;
-        position: relative;
-    }
-
-    & span {
-        position: absolute;
-    }
-`
-
-const Span = styled.span`
-    opacity: 0.8;
-`;

@@ -8,7 +8,6 @@ const Space: React.FC = () => {
     return (
         <Container>
             <div id="scene" data-tilt>
-                
                 <div data-depth="0.1" css={background}>
                     <Image 
                         src="/img/background.png" 

@@ -81,7 +81,7 @@ export default SendForm;
 const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
-    overflow: auto;
+    height: 85%;
 `
 
 const Form = styled.section`
@@ -91,15 +91,15 @@ const Form = styled.section`
     width: 35vw;
     height: 75vh;
     background-color: #fff;
-    opacity: 0.85;
+    opacity: 0.8;
     border-radius: 1.5rem;
     padding: 1em 1.5em;
     z-index: 2;
 
     transition: .8s;
     &:hover {
-        opacity: 0.95;
-        transform: scale(1.008);
+        opacity: 0.9;
+        transform: scale(1.01);
     }
 `
 
@@ -128,7 +128,7 @@ const Input = styled.input`
     border-width: 1px 1px 1px 1px;
     color: rgba(255,74,86, 0.9);
     font-weight: bold;
-    font-family: "Helvetica Neue", Helvetica,Arial,sans-serif;
+    font-family: 'Helvetica Neue', sans-serif;
     font-size: 1em;
     line-height: 1.4em;
     padding: 5px 8px;
@@ -175,7 +175,7 @@ const TextArea = styled.textarea`
     border-width: 1px 1px 1px 1px;
     color: rgba(255,74,86, 0.9);
     font-weight: bold;
-    font-family: "Helvetica Neue", Helvetica,Arial,sans-serif;
+    font-family: 'Helvetica Neue', sans-serif;
     font-size: 1em;
     line-height: 1.4em;
     padding: 5px 8px;
