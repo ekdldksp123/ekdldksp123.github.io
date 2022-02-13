@@ -13,6 +13,7 @@ import {
     BackgroundRock,
     Pagination,
 } from './planets.styles';
+import { isMobile, isBrowser } from 'react-device-detect';
 
 const Planets: React.FC = () => {
     return (
@@ -26,7 +27,7 @@ const Planets: React.FC = () => {
                     <SlideText className="slide-text">
                         <h4><span>01</span></h4>
                     </SlideText>
-                    <SlideDetail className="slide-detail">
+                    <SlideDetail isMobile={isMobile} className="slide-detail">
                         <p>
                             <span>
                             Mercury is the closest planet to the Sun but, perhaps
@@ -58,7 +59,7 @@ const Planets: React.FC = () => {
                     <SlideText className="slide-text">
                         <h4><span>02</span></h4>
                     </SlideText>
-                        <SlideDetail className="slide-detail">
+                        <SlideDetail isMobile={isMobile} className="slide-detail">
                         <p>
                             <span>
                             Venus is the second planet from the Sun and the
@@ -89,7 +90,7 @@ const Planets: React.FC = () => {
                     <SlideText className="slide-text">
                         <h4><span>03</span></h4>
                     </SlideText>
-                    <SlideDetail className="slide-detail">
+                    <SlideDetail isMobile={isMobile} className="slide-detail">
                     <p>
                         <span>
                         Earth is the third planet from the Sun and the fifth largest
@@ -119,7 +120,7 @@ const Planets: React.FC = () => {
                     <SlideText className="slide-text">
                         <h4><span>04</span></h4>
                     </SlideText>
-                    <SlideDetail className="slide-detail">
+                    <SlideDetail isMobile={isMobile} className="slide-detail">
                     <p>
                         <span>
                         Mars is the fourth planet from the Sun and the
@@ -150,7 +151,7 @@ const Planets: React.FC = () => {
                     <SlideText className="slide-text">
                         <h4><span>05</span></h4>
                     </SlideText>
-                    <SlideDetail className="slide-detail">
+                    <SlideDetail isMobile={isMobile} className="slide-detail">
                     <p>
                         <span>
                         Jupiter is the fifth planet from the Sun and the largest
@@ -181,7 +182,7 @@ const Planets: React.FC = () => {
                     <SlideText className="slide-text">
                         <h4><span>06</span></h4>
                     </SlideText>
-                    <SlideDetail className="slide-detail">
+                    <SlideDetail isMobile={isMobile} className="slide-detail">
                     <p>
                         <span>
                         Saturn is the sixth planet from the Sun, with the largest
@@ -213,7 +214,7 @@ const Planets: React.FC = () => {
                     <SlideText className="slide-text">
                         <h4><span>07</span></h4>
                     </SlideText>
-                    <SlideDetail className="slide-detail">
+                    <SlideDetail isMobile={isMobile} className="slide-detail">
                     <p>
                         <span>
                         Uranus is the seventh planet discovered in the Solar System
@@ -243,7 +244,7 @@ const Planets: React.FC = () => {
                     <SlideText className="slide-text">
                         <h4><span>08</span></h4>
                     </SlideText>
-                    <SlideDetail className="slide-detail">
+                    <SlideDetail isMobile={isMobile} className="slide-detail">
                     <p>
                         <span>
                         Neptune is the fourth largest and the farthest planet of the

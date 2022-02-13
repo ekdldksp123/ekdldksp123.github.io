@@ -57,28 +57,28 @@ export const SwiperSlide = styled.div`
     height: 400px !important;
     width: 90% !important;
     background: transparent;
-    &:nth-child(1) .slide-img {
+    &:nth-of-type(1) .slide-img {
         background-image: url("/img/mercury.png");
     }
-    &:nth-child(2) .slide-img {
+    &:nth-of-type(2) .slide-img {
         background-image: url("/img/venus.png");
     }
-    &:nth-child(3) .slide-img {
+    &:nth-of-type(3) .slide-img {
         background-image: url("/img/earth1.png");
     }
-    &:nth-child(4) .slide-img {
+    &:nth-of-type(4) .slide-img {
         background-image: url("/img/mars.png");
     }
-    &:nth-child(5) .slide-img {
+    &:nth-of-type(5) .slide-img {
         background-image: url("/img/jupiter.png");
     }
-    &:nth-child(6) .slide-img {
+    &:nth-of-type(6) .slide-img {
         background-image: url("/img/saturn.png");
     }
-    &:nth-child(7) .slide-img {
+    &:nth-of-type(7) .slide-img {
         background-image: url("/img/uranus.png");
     }
-    &:nth-child(8) .slide-img {
+    &:nth-of-type(8) .slide-img {
         background-image: url("/img/neptune.png");
     }
 `
@@ -121,7 +121,7 @@ export const SlideDetail = styled.div`
     overflow-y: auto;
     
     & p {
-        font-size: 15px;
+        font-size: ${({isMobile}:{isMobile:boolean}) => (isMobile ? '15px;' : '22.5px;')}
         color: #fff;
         position: relative;
         opacity: 0.8;

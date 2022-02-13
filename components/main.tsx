@@ -2,20 +2,16 @@
 import styled from '@emotion/styled';
 import { useEffect } from "react";
 import { init, scripts } from "../public/styles/config";
-import { useScript } from "../public/js/hooks";
 import Planets from "./universe/planets";
 import Space from "./universe/space";
 import NavBar from "./nav/NavBar";
 import SendMail from "./nav/SendMail";
 import { useState } from "react";
+import { JsProps } from '../public/types/props';
 
-const Main: React.FC = () => {
+const Main: React.FC<JsProps> = ({parallax, swiper, gsap}) => {
     
     const [visible, setIsVisible] = useState<boolean>(false);
-
-    const parallax = useScript(scripts[1]);
-    const gsap = useScript(scripts[0]);
-    const swiper = useScript(scripts[2]);
 
     useEffect(() => {
         init();
@@ -47,14 +43,19 @@ const Main: React.FC = () => {
             <Wrapper>
                 <Slide>
                     <Page id="from">
-                        <NavBar/>
                         <Space/>
                     </Page>
                     <Page id="to">
-                        <SendMail isVisible={visible}/>
+                        <SendMail 
+                            isVisible={visible}
+                            parallax={parallax}
+                            swiper={swiper}
+                            gsap={gsap}
+                        />
                     </Page>
                 </Slide>
             </Wrapper>
+            <NavBar visible={visible}/>
             <Planets/>
         </>
     );

@@ -3,9 +3,16 @@ import { css, keyframes } from "@emotion/react";
 import styled from '@emotion/styled';
 import Image from 'next/image';
 
-const NavBar:React.FC = () => {
+interface Props {
+    visible: boolean,
+}
+
+const NavBar:React.FC<Props> = ({visible}) => {
     
-    return (
+    return visible 
+    ? <></>
+    :
+    (
         <Nav>
             <div css={logo}>Explore.</div>
             <Links>

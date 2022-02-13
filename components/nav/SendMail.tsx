@@ -6,16 +6,15 @@ import { useEffect } from "react";
 import SendForm from "./SendForm";
 import { Container, Particle, Rocket, Astronaut } from './SendMail.styles';
 
-type Visible = {
+type Props = {
     isVisible: boolean,
+    parallax: string,
+    swiper: string,
+    gsap: string,
 }
 
-const SendMail: React.FC<Visible> = ({isVisible}) => {
-
-    const parallax = useScript(scripts[1]);
-    const gsap = useScript(scripts[0]);
-    const swiper = useScript(scripts[2]);
-
+const SendMail: React.FC<Props> = ({isVisible, parallax, swiper, gsap}) => {
+    
     useEffect(() => {
         init();
         if(swiper === "ready" && parallax === "ready") {

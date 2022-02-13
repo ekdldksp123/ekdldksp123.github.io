@@ -22,7 +22,7 @@ const Space: React.FC = () => {
                 </div>
                 <div data-depth="1.2" css={earth}>
                     <Image 
-                        src="../../img/earth.png" 
+                        src="/img/earth.png" 
                         alt="" 
                         layout="fill"
                         loading="eager"
