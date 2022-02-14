@@ -85,21 +85,24 @@ const SendForm:React.FC = () => {
     return (
         <Wrapper>
             <BackBtn/>
-            <Form>
-                <Title>CONTACT</Title>
+            <Form css={form}>
+                <Title css={title}>CONTACT</Title>
                 <Input 
+                    css={input}
                     name="name" 
                     ref={nameRef} 
                     placeholder="Name" 
                     onChange={(e) => {onChangeHandler(e)}}
                 />
                 <Input 
+                    css={input}
                     name="email" 
                     ref={emailRef} 
                     placeholder="Email" 
                     onChange={(e) => {onChangeHandler(e)}}
                 />
                 <TextArea 
+                    css={input}
                     name="message" 
                     ref={messageRef} 
                     placeholder="Message" 
@@ -122,10 +125,32 @@ const SendForm:React.FC = () => {
 
 export default SendForm;
 
+const title = css`
+    @media (max-width: 600px) {
+        margin-left: 10px;
+    }
+`
+
 const submit = css`
     float: right;
     bottom: 0;
     transform: translatey(70%);
+`
+
+const form = css`
+    @media (max-width: 600px) {
+        margin-left: 25px;
+        margin-top: 25px;
+        width: 250px;
+        height: 75vh;
+        padding: 0.5em 1em 0.5em 1em;
+    }
+`
+
+const input = css`
+    @media (max-width: 600px) {
+        width: 85% !important;
+    }
 `
 
 

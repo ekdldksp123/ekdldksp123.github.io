@@ -4,7 +4,7 @@ import styled from '@emotion/styled';
 
 const BackBtn:React.FC = () => {
     return (
-        <Back id="back">
+        <Back id="back" css={back}>
             <Sliding>
                 <Arrow/>
             </Sliding>
@@ -28,6 +28,12 @@ const Back = styled.div`
     justify-content: center;
     align-items: center;
     cursor: pointer;
+`
+const back = css`
+    @media (max-width: 600px) {
+        margin-left: 10px;
+        margin-bottom: 15px;
+    }
 `
 
 const slide = keyframes`

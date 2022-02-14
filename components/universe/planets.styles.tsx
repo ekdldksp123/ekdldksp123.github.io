@@ -17,7 +17,7 @@ export const Pagination = styled.div`
     display: flex;
     justify-content: space-evenly;
     list-style: none;
-    font-size: 20px;
+    font-size: 22.5px;
     
     & .swiper-pagination-bullet {
         opacity: 0.2;
@@ -121,7 +121,6 @@ export const SlideDetail = styled.div`
     overflow-y: auto;
     
     & p {
-        font-size: ${({isMobile}:{isMobile:boolean}) => (isMobile ? '15px;' : '22.5px;')}
         color: #fff;
         position: relative;
         opacity: 0.8;

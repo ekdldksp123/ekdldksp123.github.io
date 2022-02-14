@@ -15,7 +15,7 @@ const NavBar:React.FC<Props> = ({visible}) => {
     (
         <Nav>
             <div css={logo}>Explore.</div>
-            <Links>
+            <Links css={links}>
                 <Link>
                     <Image 
                         src="/img/github.png" 
@@ -82,6 +82,16 @@ const Links = styled.ul`
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
+    list-style-type: none;
+`
+
+const links = css`
+    @media (max-width: 800px) {
+        flex-direction: column; 
+        padding-top: 80px;
+        padding-right: 15px;
+    }
 `
 
 const Link = styled.li`
@@ -91,6 +101,7 @@ const Link = styled.li`
     & img {
         transform: scale(0.5);
     }
+
 `
 
 const icon = css`
