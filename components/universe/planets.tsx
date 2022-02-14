@@ -293,8 +293,8 @@ const pagination = css`
         font-size: 18px;
         display: flex;
         justify-content: space-evenly;  
-        width: 98%;
-
+        width: 100%;
+        
         & .swiper-pagination-bullet {
             opacity: 0.2;
             outline: none;
@@ -316,7 +316,7 @@ const rock = css`
         position: absolute;
         transform: scale(0.2);
         filter: brightness(0.3);
-        top: 10vh;
+        top: 0vh;
         left: -25px;
         z-index: 1;
     }

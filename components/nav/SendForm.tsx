@@ -125,6 +125,7 @@ const SendForm:React.FC = () => {
 
 export default SendForm;
 
+
 const title = css`
     @media (max-width: 600px) {
         margin-left: 10px;
@@ -144,6 +145,12 @@ const form = css`
         width: 250px;
         height: 75vh;
         padding: 0.5em 1em 0.5em 1em;
+
+        overflow-y: auto;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
     }
 `
 

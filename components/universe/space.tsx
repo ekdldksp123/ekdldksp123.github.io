@@ -125,10 +125,17 @@ const text = css`
     }
 
     @media (max-width: 600px) {
-        z-index: 20 !important;
-        font-family: 'Coolwonder', sans-serif;
-        font-size: 5vw;
-        color: #fff;
+        z-index: 15 !important;
+
+        & h1 {
+            font-family: 'Coolwonder', sans-serif;
+            font-size: 5vw;
+            color: #fff;
+            position: absolute;
+            top: 30vh;
+            left: 25vw;
+        }
+        
     }
 `;
 
