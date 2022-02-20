@@ -42,6 +42,6 @@
 
 ### 2022-02-20
 - react 파비콘 추가
-- next/script lazyOnload strategy로 웹성능 최적화
+- next/script strategy로 웹성능 최적화
 - nav 탑 픽스 제거
 - 화면 slide effect 여러번 되도록 useEffect 구문 수정

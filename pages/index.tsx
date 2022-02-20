@@ -24,17 +24,17 @@ export default function App() {
             <Script 
                 id="parallax"
                 src={scripts[0]} 
-                strategy="lazyOnload"
+                strategy="beforeInteractive"
             />
             <Script 
                 id="swiper"
                 src={scripts[1]} 
-                strategy="lazyOnload"
+                strategy="beforeInteractive"
             />
             <Script 
                 id="gsap"
                 src={scripts[2]} 
-                strategy="lazyOnload"
+                strategy="afterInteractive"
                 onLoad={() => {
                     init();
                     const script = document.createElement('script'); 
