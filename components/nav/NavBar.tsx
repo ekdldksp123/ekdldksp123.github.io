@@ -7,12 +7,9 @@ interface Props {
     visible: boolean,
 }
 
-const NavBar:React.FC<Props> = ({visible}) => {
+const NavBar:React.FC = () => {
     
-    return visible 
-    ? <></>
-    :
-    (
+    return (
         <Nav>
             <div css={logo}>Explore.</div>
             <Links css={links}>
@@ -60,7 +57,7 @@ const NavBar:React.FC<Props> = ({visible}) => {
 export default NavBar;
 
 const Nav = styled.nav`
-    position: fixed !important;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 100;

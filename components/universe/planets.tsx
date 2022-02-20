@@ -190,7 +190,7 @@ const Planets: React.FC = () => {
                         planet after Jupiter, and recently, with many other moons
                         being discovered, it surpassed the number of Jupiter’s moons.
                         <br/>
-                        제가 주로 사용하는 프레임워크는 React 지만, ReactNative, Svelte 도 겸하고 있습니다. 모바일 화면 개발도 좋아해요 💜
+                        제가 주로 사용하는 프레임워크는 React 지만, ReactNative, Flutter, Svelte 도 겸하고 있습니다. 모바일 화면 개발도 좋아해요 💜
                         </span>
                     </p>
                     </SlideDetail>

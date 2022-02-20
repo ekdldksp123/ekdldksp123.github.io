@@ -1,27 +1,15 @@
 /** @jsxImportSource @emotion/react */
 import styled from '@emotion/styled';
 import { useEffect } from "react";
-import { init, scripts } from "../public/styles/config";
 import Planets from "./universe/planets";
 import Space from "./universe/space";
 import NavBar from "./nav/NavBar";
 import SendMail from "./nav/SendMail";
 import { useState } from "react";
-import { JsProps } from '../public/types/props';
 
-const Main: React.FC<JsProps> = ({parallax, swiper, gsap}) => {
+const Main: React.FC = () => {
     
     const [visible, setIsVisible] = useState<boolean>(false);
-
-    useEffect(() => {
-        init();
-        if(swiper === "ready" && parallax === "ready") {
-            const script = document.createElement('script'); 
-            script.src = scripts[3];
-            script.async = true;
-            document.body.appendChild(script);
-        }
-    },[parallax, swiper, gsap]);
 
     useEffect(() => {
         let gmail: HTMLElement = document.getElementById("gmail");
@@ -36,26 +24,21 @@ const Main: React.FC<JsProps> = ({parallax, swiper, gsap}) => {
             slide.parentElement.style.transform = `translateX(0%)`;
             setIsVisible(false);
         })
-    },[]);
+    },[visible]);
 
     return (
         <>
             <Wrapper>
                 <Slide>
                     <Page id="from">
+                        <NavBar/>
                         <Space/>
                     </Page>
                     <Page id="to">
-                        <SendMail 
-                            isVisible={visible}
-                            parallax={parallax}
-                            swiper={swiper}
-                            gsap={gsap}
-                        />
+                        <SendMail isVisible={visible} />
                     </Page>
                 </Slide>
             </Wrapper>
-            <NavBar visible={visible}/>
             <Planets/>
         </>
     );

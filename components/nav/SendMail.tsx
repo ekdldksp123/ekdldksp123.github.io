@@ -1,28 +1,13 @@
 /** @jsxImportSource @emotion/react */
 import { css, keyframes } from "@emotion/react";
-import { init, scripts } from "../../public/styles/config";
-import { useEffect } from "react";
 import SendForm from "./SendForm";
 import { Container, Particle, Rocket, Astronaut } from './SendMail.styles';
 
 type Props = {
     isVisible: boolean,
-    parallax: string,
-    swiper: string,
-    gsap: string,
 }
 
-const SendMail: React.FC<Props> = ({isVisible, parallax, swiper, gsap}) => {
-    
-    useEffect(() => {
-        init();
-        if(swiper === "ready" && parallax === "ready") {
-            const script = document.createElement('script'); 
-            script.src = scripts[3];
-            script.async = true;
-            document.body.appendChild(script);
-        }
-    },[parallax, swiper, gsap]);
+const SendMail: React.FC<Props> = ({isVisible}) => {
 
     return (
         <Container id="space">

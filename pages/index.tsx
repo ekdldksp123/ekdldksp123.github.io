@@ -1,13 +1,10 @@
 import Main from "../components/main";
 import Head from "next/head";
-import { globalCss, scripts } from "../public/styles/config";
+import { globalCss, init, scripts } from "../public/styles/config";
+import Script from "next/script";
 import { useScript } from "../public/js/hooks";
 
 export default function App() {
-
-    const parallax = useScript(scripts[0]);
-    const swiper = useScript(scripts[1]);
-    const gsap = useScript(scripts[2]);
 
     return (
         <>
@@ -23,7 +20,29 @@ export default function App() {
                 <link href="http://fonts.cdnfonts.com/css/helvetica-neue-9" rel="stylesheet" />
                 <style>{globalCss}</style>
             </Head>
-            <Main parallax={parallax} swiper={swiper} gsap={gsap}/>
+            <Main />
+            <Script 
+                id="parallax"
+                src={scripts[0]} 
+                strategy="lazyOnload"
+            />
+            <Script 
+                id="swiper"
+                src={scripts[1]} 
+                strategy="lazyOnload"
+            />
+            <Script 
+                id="gsap"
+                src={scripts[2]} 
+                strategy="lazyOnload"
+                onLoad={() => {
+                    init();
+                    const script = document.createElement('script'); 
+                    script.src = scripts[3];
+                    script.async = true;
+                    document.body.appendChild(script);
+                }}
+            />
         </>
     )
 }
