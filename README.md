@@ -39,3 +39,9 @@
 ### 2022-02-14
 - babel 설정 및 Prop className did not match 에러 해결!
 - 미디어쿼리로 600픽셀 기준 전체적으로 간단하게 반응형 적용(간단도 힘들다...)
+
+### 2022-02-20
+- react 파비콘 추가
+- next/script lazyOnload strategy로 웹성능 최적화
+- nav 탑 픽스 제거
+- 화면 slide effect 여러번 되도록 useEffect 구문 수정
