@@ -27,6 +27,7 @@ const Space: React.FC = () => {
                         src={"/img/earth.png"}
                         alt="" 
                         layout="fill"
+                        loading="eager"
                         priority={true}
                     />
                 </div>
@@ -35,6 +36,7 @@ const Space: React.FC = () => {
                         src={"/img/moon.png"}
                         alt="" 
                         layout="fill"
+                        loading="eager"
                         priority={true}
                     />
                 </div>
@@ -46,6 +48,7 @@ const Space: React.FC = () => {
                         src={"/img/mid.png"}
                         alt="" 
                         layout="fill"
+                        loading="eager"
                         priority={true}
                     />
                 </div>
@@ -54,6 +57,7 @@ const Space: React.FC = () => {
                         src={"/img/foreground.png"}
                         alt="" 
                         layout="fill"
+                        loading="eager"
                         priority={true}
                     />
                 </div>
