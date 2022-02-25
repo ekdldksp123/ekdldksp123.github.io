@@ -10,7 +10,7 @@ const Space: React.FC = () => {
             <div id="scene" data-tilt>
                 <div data-depth="0.1" css={background}>
                     <Image 
-                        src="/img/background.png" 
+                        src={"/img/background.png"} 
                         alt="" 
                         layout="fill"
                         loading="eager"
@@ -22,7 +22,7 @@ const Space: React.FC = () => {
                 </div>
                 <div data-depth="1.2" css={earth}>
                     <Image 
-                        src="/img/earth.png" 
+                        src={"/img/earth.png"}
                         alt="" 
                         layout="fill"
                         loading="eager"
@@ -31,7 +31,7 @@ const Space: React.FC = () => {
                 </div>
                 <div data-depth="1.2" css={moon}>
                     <Image 
-                        src="/img/moon.png" 
+                        src={"/img/moon.png"}
                         alt="" 
                         layout="fill"
                         loading="eager"
@@ -43,7 +43,7 @@ const Space: React.FC = () => {
                 </div>
                 <div data-depth="0.4" css={mid}>
                     <Image 
-                        src="/img/mid.png" 
+                        src={"/img/mid.png"}
                         alt="" 
                         layout="fill"
                         loading="eager"
@@ -52,7 +52,7 @@ const Space: React.FC = () => {
                 </div>
                 <div data-depth="0.1" css={foreground}>
                     <Image 
-                        src="/img/foreground.png" 
+                        src={"/img/foreground.png"}
                         alt="" 
                         layout="fill"
                         loading="eager"

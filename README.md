@@ -45,3 +45,6 @@
 - next/script strategy로 웹성능 최적화
 - nav 탑 픽스 제거
 - 화면 slide effect 여러번 되도록 useEffect 구문 수정
+
+### 2022-02-25
+- 이미지 로딩 속도 최적화 시도
