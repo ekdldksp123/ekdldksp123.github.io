@@ -15,6 +15,8 @@ const Space: React.FC = () => {
                         layout="fill"
                         loading="eager"
                         priority={true}
+                        objectFit="cover"
+                        objectPosition="center"
                     />
                 </div>
                 <div data-depth="0.2" css={rock1}>
@@ -25,7 +27,6 @@ const Space: React.FC = () => {
                         src={"/img/earth.png"}
                         alt="" 
                         layout="fill"
-                        loading="eager"
                         priority={true}
                     />
                 </div>
@@ -34,7 +35,6 @@ const Space: React.FC = () => {
                         src={"/img/moon.png"}
                         alt="" 
                         layout="fill"
-                        loading="eager"
                         priority={true}
                     />
                 </div>
@@ -46,7 +46,6 @@ const Space: React.FC = () => {
                         src={"/img/mid.png"}
                         alt="" 
                         layout="fill"
-                        loading="eager"
                         priority={true}
                     />
                 </div>
@@ -55,7 +54,6 @@ const Space: React.FC = () => {
                         src={"/img/foreground.png"}
                         alt="" 
                         layout="fill"
-                        loading="eager"
                         priority={true}
                     />
                 </div>
@@ -72,7 +70,7 @@ const Container = styled.section`
 `;
 
 const background = css`
-    z-index: auto;
+    z-index: 0;
     width: 110vw;
     height: 110vh;
     & img {
