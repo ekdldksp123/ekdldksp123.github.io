@@ -2,7 +2,7 @@
 import { css } from "@emotion/react";
 import { useState, useRef, useEffect } from "react";
 import BackBtn from "./BackBtn";
-import{ EmailJSResponseStatus, init, send } from '@emailjs/browser';
+import { EmailJSResponseStatus, init, send } from '@emailjs/browser';
 import Error from "next/error";
 import { Wrapper, Form, Title, Input, TextArea, SendBtn } from './SendForm.styles';
 import Modal from "./Popup";
@@ -14,7 +14,7 @@ interface Mail {
     message: string,
 }
 
-const SendForm:React.FC = () => {
+const SendForm: React.FC = () => {
 
     const [mail, setMail] = useState<Mail>({
         name: '',
@@ -30,15 +30,15 @@ const SendForm:React.FC = () => {
 
     useEffect(() => {
         init('user_KlHkwRpuuPm2dqMdsz6Hs');
-    },[]);
+    }, []);
 
     useEffect(() => {
 
     }, [error]);
 
-    const onChangeHandler = (e: React.ChangeEvent<any>):void => {
-        const {name, value} = e.target;
-        setMail({...mail, [name]: value});
+    const onChangeHandler = (e: React.ChangeEvent<any>): void => {
+        const { name, value } = e.target;
+        setMail({ ...mail, [name]: value });
     }
 
     const validateEmail = () => {
@@ -48,34 +48,33 @@ const SendForm:React.FC = () => {
 
     const onCloseHandler = () => {
         setToggle(!toggle);
-        window.location.reload();
     }
 
-    const renderPortal = (elementId:string, title:string, content:string) => {
+    const renderPortal = (elementId: string, title: string, content: string) => {
         return (
-            <Portal 
-                elementId={elementId} 
+            <Portal
+                elementId={elementId}
                 child={
-                    <Modal 
-                        toggle={toggle} 
-                        onClose={onCloseHandler} 
+                    <Modal
+                        toggle={toggle}
+                        onClose={onCloseHandler}
                         title={title}
                         content={content}
                     />}
-            />        
+            />
         );
     }
 
-    const onSubmit = ():void => {
-        
-        if(!mail.name) nameRef.current?.focus();
-        else if(!mail.email || !validateEmail()) emailRef.current?.focus();
-        else if(!mail.message) messageRef.current?.focus();
+    const onSubmit = (): void => {
+
+        if (!mail.name) nameRef.current?.focus();
+        else if (!mail.email || !validateEmail()) emailRef.current?.focus();
+        else if (!mail.message) messageRef.current?.focus();
         else {
-            send('vivid', 'template_fct696p',{...mail})
-                .then((res:EmailJSResponseStatus) => {
+            send('vivid', 'template_fct696p', { ...mail })
+                .then((res: EmailJSResponseStatus) => {
                     setToggle(!toggle);
-                }, (err:Error) => {
+                }, (err: Error) => {
                     setError(!error);
                     console.log(err);
                 });
@@ -84,38 +83,38 @@ const SendForm:React.FC = () => {
 
     return (
         <Wrapper>
-            <BackBtn/>
+            <BackBtn />
             <Form css={form}>
                 <Title css={title}>CONTACT</Title>
-                <Input 
+                <Input
                     css={input}
-                    name="name" 
-                    ref={nameRef} 
-                    placeholder="Name" 
-                    onChange={(e) => {onChangeHandler(e)}}
+                    name="name"
+                    ref={nameRef}
+                    placeholder="Name"
+                    onChange={(e) => { onChangeHandler(e) }}
                 />
-                <Input 
+                <Input
                     css={input}
-                    name="email" 
-                    ref={emailRef} 
-                    placeholder="Email" 
-                    onChange={(e) => {onChangeHandler(e)}}
+                    name="email"
+                    ref={emailRef}
+                    placeholder="Email"
+                    onChange={(e) => { onChangeHandler(e) }}
                 />
-                <TextArea 
+                <TextArea
                     css={input}
-                    name="message" 
-                    ref={messageRef} 
-                    placeholder="Message" 
-                    onChange={(e) => {onChangeHandler(e)}}
+                    name="message"
+                    ref={messageRef}
+                    placeholder="Message"
+                    onChange={(e) => { onChangeHandler(e) }}
                 />
                 <div css={submit}>
                     <SendBtn onClick={() => onSubmit()}>SEND</SendBtn>
                 </div>
             </Form>
-            {toggle && 
+            {toggle &&
                 renderPortal(
-                    "portal", 
-                    error ? "메일 전송 실패" : "메일 전송 완료", 
+                    "portal",
+                    error ? "메일 전송 실패" : "메일 전송 완료",
                     error ? "오류가 발생했습니다 :( 빠른 시일에 개선할게요!" : "감사합니다 :)"
                 )
             }

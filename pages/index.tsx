@@ -2,7 +2,6 @@ import Main from "../components/main";
 import Head from "next/head";
 import { globalCss, init, scripts } from "../public/styles/config";
 import Script from "next/script";
-import { useScript } from "../public/js/hooks";
 
 export default function App() {
 
@@ -21,23 +20,23 @@ export default function App() {
                 <style>{globalCss}</style>
             </Head>
             <Main />
-            <Script 
+            <Script
                 id="parallax"
-                src={scripts[0]} 
+                src={scripts[0]}
                 strategy="beforeInteractive"
             />
-            <Script 
+            <Script
                 id="swiper"
-                src={scripts[1]} 
+                src={scripts[1]}
                 strategy="beforeInteractive"
             />
-            <Script 
+            <Script
                 id="gsap"
-                src={scripts[2]} 
-                strategy="afterInteractive"
+                src={scripts[2]}
+                strategy="lazyOnload"
                 onLoad={() => {
                     init();
-                    const script = document.createElement('script'); 
+                    const script = document.createElement('script');
                     script.src = scripts[3];
                     script.async = true;
                     document.body.appendChild(script);
