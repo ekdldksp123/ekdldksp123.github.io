@@ -9,9 +9,9 @@ interface ModalProps {
     content: string,
 }
 
-const Modal: React.FC<ModalProps> = ({toggle, onClose, title, content}) => {
+const Modal: React.FC<ModalProps> = ({ toggle, onClose, title, content }) => {
     useEffect(() => {
-        if(toggle) document.body.style.cssText = `position: fixed; top: -${window.scrollY}px`
+        if (toggle) document.body.style.cssText = `position: fixed; top: -${window.scrollY}px`
     }, [toggle]);
 
     return toggle ? (
@@ -23,7 +23,7 @@ const Modal: React.FC<ModalProps> = ({toggle, onClose, title, content}) => {
                 </StyledModalHeader>
                 <StyledModalBody>{content}</StyledModalBody>
                 <StyledModalFooter>
-                    <ConfirmBtn/>
+                    <ConfirmBtn />
                 </StyledModalFooter>
             </StyledModal>
         </StyledModalOverlay>
@@ -53,6 +53,7 @@ const StyledModalHeader = styled.div`
 
 const StyledModal = styled.div`
     display: flex;
+    overflow-y: auto !important;
     flex-direction: column;
     background: white;
     width: 350px;
@@ -88,8 +89,8 @@ const Close = styled.a`
 
 const StyledModalFooter = styled.div`
     position: relative;
-    #bottom: -50px;
     width: 100%;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
