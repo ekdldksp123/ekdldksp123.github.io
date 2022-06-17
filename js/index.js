@@ -22,15 +22,15 @@ var slider = new Swiper(".swiper", {
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
-    renderBullet: function(index, className) {
+    renderBullet: function (index, className) {
       return '<div class="' + className + '">' + keys[index] + "</div>";
     }
   }
 });
 
-slider.on("slideChange", function() {
+slider.on("slideChange", function () {
   console.log("SLIDE CHANGED");
-  
+
   gsap.to(".slide-text span", 0.2, {
     x: "-100px"
   });
@@ -51,7 +51,7 @@ slider.on("slideChange", function() {
   });
 });
 
-slider.on("slideChangeTransitionEnd", function() {
+slider.on("slideChangeTransitionEnd", function () {
   gsap.to(".swiper-slide .slide-img", 1, {
     rotation: 10
   });
