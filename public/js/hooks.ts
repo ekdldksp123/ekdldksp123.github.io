@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 
-const useScript = (src:string) => {
-    
+const useScript = (src: string) => {
     const [status, setStatus] = useState<string>(src ? "loading" : "idle");
 
     useEffect(
@@ -11,7 +10,7 @@ const useScript = (src:string) => {
                 return;
             }
 
-            let script:any = document.querySelector(`script[src="${src}"]`);
+            let script: any = document.querySelector(`script[src="${src}"]`);
 
             if (!script) {
                 script = document.createElement("script");
@@ -21,7 +20,7 @@ const useScript = (src:string) => {
 
                 document.body.appendChild(script);
 
-                const setAttributeFromEvent = (event:Event) => {
+                const setAttributeFromEvent = (event: Event) => {
                     script.setAttribute(
                         "data-status",
                         event.type === "load" ? "ready" : "error"
