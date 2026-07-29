@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import { COLORS } from '../styles/colors';
 
 export const Wrapper = styled.div`
     display: flex;
@@ -29,7 +30,7 @@ export const Title = styled.h1`
     margin-left: 20px;
     margin-top: 20px;
     font-size: 50px;
-    color: rgba(255,74,86, 0.9);
+    color: ${COLORS.accent};
     text-decoration: underline;
 `
 
@@ -43,12 +44,12 @@ export const Input = styled.input`
     border-right-colors: none;
     border-top-colors: none;
     background: none repeat scroll 0 0 transparent;
-    border-color: rgba(255,74,86, 0.9);
+    border-color: ${COLORS.accent};
     border-image: none;
     border-radius: 20px 20px 20px 20px;
     border-style: solid solid solid solid;
     border-width: 1px 1px 1px 1px;
-    color: rgba(255,74,86, 0.9);
+    color: ${COLORS.accent};
     font-weight: bold;
     font-family: 'Helvetica Neue', sans-serif;
     font-size: 1em;
@@ -57,8 +58,8 @@ export const Input = styled.input`
     transition: background-color 0.2s ease 0s;
 
     &:focus {
-        background: none repeat scroll 0 0 rgba(255,74,86, 0.9);
-        border-color: rgba(255,74,86, 0.9);
+        background: none repeat scroll 0 0 ${COLORS.accent};
+        border-color: ${COLORS.accent};
         outline-width: 0;
         color: #fff;
         font-weight: bold;
@@ -75,7 +76,7 @@ export const Input = styled.input`
     }
 
     &::placeholder {
-        color: rgba(255,74,86, 0.9);
+        color: ${COLORS.accent};
         font-weight: bold;
     }
 `
@@ -90,12 +91,12 @@ export const TextArea = styled.textarea`
     border-right-colors: none;
     border-top-colors: none;
     background: none repeat scroll 0 0 transparent;
-    border-color: rgba(255,74,86, 0.9);
+    border-color: ${COLORS.accent};
     border-image: none;
     border-radius: 20px 20px 20px 20px;
     border-style: solid solid solid solid;
     border-width: 1px 1px 1px 1px;
-    color: rgba(255,74,86, 0.9);
+    color: ${COLORS.accent};
     font-weight: bold;
     font-family: 'Helvetica Neue', sans-serif;
     font-size: 1em;
@@ -104,8 +105,8 @@ export const TextArea = styled.textarea`
     transition: background-color 0.2s ease 0s;
 
     &:focus {
-        background: none repeat scroll 0 0 rgba(255,74,86, 0.9);
-        border-color: rgba(255,74,86, 0.9);
+        background: none repeat scroll 0 0 ${COLORS.accent};
+        border-color: ${COLORS.accent};
         outline-width: 0;
         color: #fff;
         font-weight: bold;
@@ -122,7 +123,7 @@ export const TextArea = styled.textarea`
     }
 
     &::placeholder {
-        color: rgba(255,74,86, 0.9);
+        color: ${COLORS.accent};
         font-weight: bold;
     }
 `

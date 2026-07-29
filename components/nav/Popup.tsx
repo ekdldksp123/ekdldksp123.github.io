@@ -1,6 +1,7 @@
 /** @jsxImportSource @emotion/react */
 import styled from '@emotion/styled';
 import { useEffect } from 'react';
+import { COLORS } from '../styles/colors';
 
 interface ModalProps {
     toggle: boolean,
@@ -47,7 +48,7 @@ const StyledModalHeader = styled.div`
     padding: 15px 25px 15px 25px;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
-    background-color: #1ECD97;
+    background-color: ${COLORS.modalGreen};
     font-size: 25px;
 `;
 
@@ -103,8 +104,8 @@ const ConfirmBtn = styled.button`
     width: 130px;
     border-radius:40px;
     background: #fff;
-    border: 2px solid #1ECD97;
-    color:#1ECD97;
+    border: 2px solid ${COLORS.modalGreen};
+    color:${COLORS.modalGreen};
     letter-spacing:1px;
     text-shadow:0;
     font:{
@@ -116,7 +117,7 @@ const ConfirmBtn = styled.button`
 
     &:hover {
         color:white;
-        background: #1ECD97;
+        background: ${COLORS.modalGreen};
     }
     &:active {
         letter-spacing: 2px ;

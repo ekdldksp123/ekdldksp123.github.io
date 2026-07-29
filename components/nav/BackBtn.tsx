@@ -1,6 +1,7 @@
 /** @jsxImportSource @emotion/react */
 import { css, keyframes } from "@emotion/react";
 import styled from '@emotion/styled';
+import { COLORS } from '../styles/colors';
 
 const BackBtn:React.FC = () => {
     return (
@@ -52,7 +53,7 @@ const Arrow = styled.div`
     width: 20px;
     height: 20px;
     border: 3px solid;
-    border-color: #06A8FF transparent transparent #06A8FF;
+    border-color: ${COLORS.arrow} transparent transparent ${COLORS.arrow};
     #box-shadow: 0 0 60px 30px #fff, 0 0 100px 60px #fff, 0 0 140px 90px #fff;
     transform: rotate(-45deg);
 `
