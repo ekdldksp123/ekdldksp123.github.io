@@ -32,10 +32,6 @@ const SendForm: React.FC = () => {
         init('user_KlHkwRpuuPm2dqMdsz6Hs');
     }, []);
 
-    useEffect(() => {
-
-    }, [error]);
-
     const onChangeHandler = (e: React.ChangeEvent<any>): void => {
         const { name, value } = e.target;
         setMail({ ...mail, [name]: value });
@@ -73,9 +69,11 @@ const SendForm: React.FC = () => {
         else {
             send('vivid', 'template_fct696p', { ...mail })
                 .then((res: EmailJSResponseStatus) => {
-                    setToggle(!toggle);
+                    setError(false);
+                    setToggle(true);
                 }, (err: Error) => {
-                    setError(!error);
+                    setError(true);
+                    setToggle(true);
                     console.log(err);
                 });
         }
